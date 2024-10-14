@@ -1,0 +1,22 @@
+POST http://localhost:3000/sign-up
+Content-Type: application/json
+
+{
+  "name": "assemble",
+  "lastName": "NaN",
+  "email": "Frankdevtools@gmail.com",
+  "phone": "992233000"
+}
+
+###
+
+POST http://localhost:3000/auth/send-link
+content-Type: application/json
+
+{
+  "email": "Frankdevtools@gmail.com"
+}
+
+
+### sign in a user via email
+GET http://localhost:3000/authenticate/sign-in?code=z0xm8bxx4ehd4w0s0tvzeqgh&redirect=http%3A%2F%2Flocalhost%3A5173

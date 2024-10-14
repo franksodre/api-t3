@@ -1,0 +1,21 @@
+### register owner
+
+POST http://localhost:3000/sign-up/level-up 
+content-Type: application/json
+
+{
+  "name": "BOSS",
+  "email": "MajorProblem20@gmail.com",
+  "password": "123isn'tmypass"
+}
+
+### login owner
+
+POST http://localhost:3000/auth/level-up?redirect=/
+content-Type: application/json
+
+{
+  "name": "BOSS",
+  "email": "MajorProblem20@gmail.com",
+  "password": "123isn'tmypass"
+}

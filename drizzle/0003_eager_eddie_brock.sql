@@ -1,0 +1,1 @@
+ALTER TABLE "invites" RENAME COLUMN "state" TO "status";

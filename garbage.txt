@@ -1,0 +1,8 @@
+export const adminRelations = relations(admin, ({ one, many }) => ({
+  admin: one(users, {
+    fields: [admin.id],
+    references: [users.id]
+  }),
+
+
+}))

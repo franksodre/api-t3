@@ -1,0 +1,7 @@
+POST http://localhost:3000/invite
+content-Type: application/json
+
+{
+  "email": "FrankInvoce@gmail.com",
+  "message": "ola frank quero convidar-lo para minha startup contigo somos 3"
+}

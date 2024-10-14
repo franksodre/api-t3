@@ -1,0 +1,10 @@
+POST http://localhost:3000/create/service
+content-Type: application/json
+
+{
+  "name": "assemble",
+  "lastName": "NaN",
+  "email": "Frankdev90@gmail.com",
+  "phone": "111111111"
+  
+}

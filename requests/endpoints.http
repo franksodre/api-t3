@@ -1,0 +1,72 @@
+### registersign a user(customer)
+
+### don't forget to make better messages
+
+POST http://localhost:3000/sign-up
+Content-Type: application/json
+
+{
+  "name": "assemble",
+  "lastName": "NaN",
+  "email": "Frankdevtools@gmail.com",
+  "phone": "992233000"
+}
+
+### send the email for sign 
+
+POST http://localhost:3000/auth/send-link
+content-Type: application/json
+
+{
+  "email": "Frankdevtools@gmail.com"
+}
+
+### sign in a user via email
+
+GET http://localhost:3000/authenticate/sign-in?code=k4djl13dqk4h8q6akjhek7l&redirect=http%3A%2F%2Flocalhost%3A5173
+
+
+### register the owner(maybe this endpoint shouldn't exist). should throw a error.
+
+POST http://localhost:3000/sign-up/level-up 
+content-Type: application/json
+
+{
+  "name": "BOSS",
+  "email": "MajorProblem20@gmail.com",
+  "password": "123isn'tmypass"
+}
+
+### the owner invites people to the company
+
+POST http://localhost:3000/invite
+content-Type: application/json
+
+{
+  "email": "FrankIcome@gmail.com",
+  "message": "ola frank quero convidar-lo para minha startup contigo somos 3"
+}
+
+### owner sign in
+
+POST http://localhost:3000/auth/level-up?redirect=/
+content-Type: application/json
+
+{
+  "name": "BOSS",
+  "email": "MajorProblem@gmail.com",
+  "password": "123isn'tmypass"
+}
+
+### register service
+
+POST http://localhost:3000/create/service
+content-Type: application/json
+
+{
+  "name": "assemble",
+  "lastName": "NaN",
+  "email": "Frankdev90@gmail.com",
+  "phone": "111111111"
+  
+}
